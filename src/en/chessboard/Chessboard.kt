@@ -13,12 +13,18 @@ class Chessboard(val dimension: Int) {
      *  Creates a new chessboard with n lines based on dimension
      *  and fill with zeroes
      */
-    fun create() {
-        for (i in 1..dimension) {
+    fun create(src : Node, dist : Node) {
+        for (i in 0 until dimension) {
             var square = arrayOf<Int>()
 
-            for (j in 1..dimension) {
-                square += 0
+            (0 until dimension).forEach { j ->
+                square += if (i == src.y && j == src.x) {
+                    1
+                } else if (i == dist.y && j == dist.x) {
+                    2
+                } else {
+                    0
+                }
             }
 
             chessboard += square

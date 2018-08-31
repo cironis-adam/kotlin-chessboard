@@ -69,4 +69,12 @@ internal object Knight {
         return Integer.MAX_VALUE
     }
 
+    /**
+     * Overiding default toString method
+     * Returns a Knight icon
+     */
+    override fun toString(): String {
+        return "\u2658"
+    }
+
 }

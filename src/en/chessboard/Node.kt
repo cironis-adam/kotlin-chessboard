@@ -1,6 +1,6 @@
 package en.chessboard
 
-internal class Node {
+class Node {
 
     /**
      * (x, y) represents chess board coordinates
