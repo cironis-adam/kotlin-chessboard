@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
     val src = Node(1, 7)
 
     // Target position
-    val dest = Node(7, 0)
+    val dest = Node(2, 7)
 
     // Draw the chessboard
     chessboard.create(src, dest)

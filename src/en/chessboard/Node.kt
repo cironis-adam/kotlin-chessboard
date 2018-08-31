@@ -35,6 +35,10 @@ class Node {
         return if (y != node.y) false else dist == node.dist
     }
 
+    /**
+     * Object is used as a key in a HashMap
+     * we need to implement hashCode() and equals()
+     */
     override fun hashCode(): Int {
         var result = x
         result = 31 * result + y

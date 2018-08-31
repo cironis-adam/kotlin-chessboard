@@ -70,7 +70,7 @@ internal object Knight {
     }
 
     /**
-     * Overiding default toString method
+     * Overriding default toString method
      * Returns a Knight icon
      */
     override fun toString(): String {

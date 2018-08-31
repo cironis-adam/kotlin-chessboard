@@ -45,7 +45,7 @@ class Chessboard(val dimension: Int) {
     }
 
     /**
-     * Overiding default toString method
+     * Overriding default toString method
      * Returns basic info about chessboard dimension
      */
     override fun toString(): String {
