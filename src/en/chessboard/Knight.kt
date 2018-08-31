@@ -7,8 +7,8 @@ internal object Knight {
     /**
      * Variables initialization
      */
-    private val row = intArrayOf(2, 2, -2, -2, 1, 1, -1, -1)
-    private val col = intArrayOf(-1, 1, 1, -1, 2, -2, 2, -2)
+    private val row = arrayOf<Int>(2, 2, -2, -2, 1, 1, -1, -1)
+    private val col = arrayOf<Int>(-1, 1, 1, -1, 2, -2, 2, -2)
 
     /**
      * Check if (x, y) is valid chess board coordinates
