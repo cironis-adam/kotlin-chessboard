@@ -25,13 +25,13 @@ internal object Knight {
         val visited = HashMap<Node, Boolean>()
 
         // Create a queue and enqueue first node
-        val q = ArrayDeque<Node>()
-        q.add(src)
+        val queue = ArrayDeque<Node>()
+        queue.add(src)
 
         // Run until queue is not empty
-        while (!q.isEmpty()) {
+        while (!queue.isEmpty()) {
             // Pop front node from queue and process it
-            val node = q.poll()
+            val node = queue.poll()
 
             val x = node.x
             val y = node.y
@@ -60,7 +60,7 @@ internal object Knight {
                     val y1 = y + col[i]
 
                     if (valid(x1, y1, N))
-                        q.add(Node(x1, y1, dist + 1))
+                        queue.add(Node(x1, y1, dist + 1))
                 }
             }
         }

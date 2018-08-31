@@ -22,7 +22,7 @@ internal class Node {
     }
 
     /**
-     * As we are using class object as a key in a HashMap
+     * Object is used as a key in a HashMap
      * we need to implement hashCode() and equals()
     */
     override fun equals(o: Any?): Boolean {

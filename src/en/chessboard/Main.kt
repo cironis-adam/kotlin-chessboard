@@ -10,11 +10,11 @@ fun main(args: Array<String>) {
     chessboard.draw()
 
     // Starting position of the Knight
-    val src = Node(3, 4)
+    val src = Node(4, 5)
 
     // Target position
-    val dest = Node(4, 3)
+    val dest = Node(1, 1)
 
-    System.out.println("Minimální počet kroků je " + BFS(src, dest, chessboard.dimension))
+    System.out.println("Minimum number of steps is " + BFS(src, dest, chessboard.dimension))
 
 }
